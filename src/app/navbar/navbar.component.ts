@@ -3,12 +3,11 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-home',
-  imports: [],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class NavbarComponent implements OnInit {
   currentRoute: string = '';
 
   constructor(private router: Router) {}

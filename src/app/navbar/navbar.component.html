@@ -1,0 +1,88 @@
+<nav class="bg-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex-shrink-0 flex items-center">
+        <span
+          (click)="navigateTo('/')"
+          class="text-3xl font-bold text-black-900 cursor-pointer"
+        >
+          Rovel Creations
+        </span>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <span
+          (click)="navigateTo('/')"
+          class="cursor-pointer hover:text-purple-700"
+          [class.active-link]="currentRoute === '/'"
+          >Home</span
+        >
+
+        <span
+          (click)="navigateTo('/products')"
+          class="cursor-pointer hover:text-purple-700"
+          [class.active-link]="currentRoute === '/products'"
+          >Products</span
+        >
+
+        <span
+          (click)="navigateTo('/about')"
+          class="cursor-pointer hover:text-purple-700"
+          [class.active-link]="currentRoute === '/about'"
+          >About</span
+        >
+
+        <span
+          (click)="navigateTo('/contact')"
+          class="cursor-pointer hover:text-purple-700"
+          [class.active-link]="currentRoute === '/contact'"
+          >Contact</span
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="h-16"></div>
+
+<!-- <nav class="bg-noir-900 shadow-xl fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex-shrink-0 flex items-center">
+        <span
+          (click)="navigateTo('/')"
+          class="text-2xl font-bold text-gold-500 cursor-pointer hover:text-gold-400 transition-colors"
+        >
+          Rovel Creations
+        </span>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <span
+          (click)="navigateTo('/')"
+          class="nav-link"
+          [class.active-link]="currentRoute === '/'"
+          >Home</span
+        >
+        <span
+          (click)="navigateTo('/products')"
+          class="nav-link"
+          [class.active-link]="currentRoute === '/products'"
+          >Products</span
+        >
+        <span
+          (click)="navigateTo('/about')"
+          class="nav-link"
+          [class.active-link]="currentRoute === '/about'"
+          >About</span
+        >
+        <span
+          (click)="navigateTo('/contact')"
+          class="nav-link"
+          [class.active-link]="currentRoute === '/contact'"
+          >Contact</span
+        >
+      </div>
+    </div>
+  </div>
+</nav> -->
